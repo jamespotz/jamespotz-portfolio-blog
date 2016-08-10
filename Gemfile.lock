@@ -145,6 +145,8 @@ GEM
       railties (= 4.2.6)
       sprockets-rails
     rails-assets-angular (1.4.12)
+    rails-assets-angular-resource (1.4.12)
+      rails-assets-angular (= 1.4.12)
     rails-assets-bootstrap (3.3.7)
       rails-assets-jquery (>= 1.9.1, < 4)
     rails-assets-jquery (3.1.0)
@@ -222,6 +224,7 @@ DEPENDENCIES
   puma
   rails (= 4.2.6)
   rails-assets-angular!
+  rails-assets-angular-resource!
   rails-assets-bootstrap!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
