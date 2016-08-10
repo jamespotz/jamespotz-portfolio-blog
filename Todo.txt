@@ -1,0 +1,15 @@
+Goal
+	To create a personal portfolio built from ground up using ROR and AngularJS.
+
+Portfolio Navigations
+	- Home -> 
+	- About Me -> About me, my likes and hobbies and more about me.
+	- Portfolio -> To showcase my work
+	- Blog -> to blog what i have newly learned
+	- Contact Me -> For people to reach me maybe a potential employer
+
+Task List
+	- Create a Login using Devise
+	- CMS integration that can use AngularJS (Optional if no angular support)
+	- Active Admin
+	- ...(List of task to think)
