@@ -4,5 +4,6 @@
 	<div ng-repeat="test in testing">
 		<p>{{ test.title }}</p>
 		<p>{{ test.body }}</p>
+		<button ng-click="deletePost(test)" class="btn btn-sm btn-primary">Delete</button>
 	</div>
 </div>

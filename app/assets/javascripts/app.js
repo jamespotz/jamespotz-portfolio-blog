@@ -5,12 +5,16 @@ test.controller('testCtrl', [
 	"Post",
 	function($scope, Post){
 		$scope.testing = Post.query();
+
+		$scope.deletePost = function(test) {
+			test.$delete();
+		}
 	}
 ]);
 
 test.factory('Post', [
 	'$resource',
 	function($resource){
-		return $resource('/api/posts', {id: '@id'});
+		return $resource('/api/posts/:id', {id: '@id'});
 	}
 ])
