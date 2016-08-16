@@ -6,6 +6,8 @@ class PostsController < ApplicationController
 	end
 
 	def destroy
-		render Post.destroy(params[:id])
+		@post = Post.find(params[:id])
+		@post.destroy
+		render json: :ok
 	end
 end

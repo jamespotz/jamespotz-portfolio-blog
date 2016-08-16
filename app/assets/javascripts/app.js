@@ -1,18 +1,18 @@
-var test = angular.module('portfolio', ["ngResource"]);
+var app = angular.module('portfolio', ["ngResource"]);
 
-test.controller('testCtrl', [
+app.controller('postCtrl', [
 	"$scope",
 	"Post",
 	function($scope, Post){
-		$scope.testing = Post.query();
+		$scope.posts = Post.query();
 
-		$scope.deletePost = function(test) {
-			test.$delete();
+		$scope.deletePost = function(post) {
+			post.$delete();
 		}
 	}
 ]);
 
-test.factory('Post', [
+app.factory('Post', [
 	'$resource',
 	function($resource){
 		return $resource('/api/posts/:id', {id: '@id'});
