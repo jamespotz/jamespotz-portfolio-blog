@@ -49,7 +49,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-angular'
   gem 'rails-assets-angular-resource'
   gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular-route'
 end
-
+gem 'angular-rails-templates'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'

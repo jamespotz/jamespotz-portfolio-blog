@@ -1,0 +1,12 @@
+<div class="col-md-10 col-md-offset-1">
+	<h1>Home#index</h1>
+	<p>Find me in app/views/home/index.html.erb</p>
+	<div ng-controller="postCtrl">
+		<div ng-repeat="post in posts">
+			<p>{{ post.title }}</p>
+			<p>{{ post.body }}</p>
+			<button class="btn btn-sm btn-primary" ng-click="viewPost(post)">Show</button>
+			<a ng-click="deletePost(post)" class="btn btn-sm btn-primary">Delete</a>
+		</div>
+	</div>
+</div>

@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-	respond_to :json
+	respond_to :html, :json
 	def index
 		@post = Post.all
 		render :json => @post
@@ -9,5 +9,9 @@ class PostsController < ApplicationController
 		@post = Post.find(params[:id])
 		@post.destroy
 		render json: :ok
+	end
+
+	def show
+		render json: Post.find(params[:id])
 	end
 end
