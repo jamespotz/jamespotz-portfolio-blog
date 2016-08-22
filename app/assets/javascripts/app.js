@@ -10,11 +10,16 @@ var app = angular.module('portfolio', ["ngResource", "ngRoute", "templates"]);
 						controller: 'postCtrl',
 						templateUrl: 'home/index.html'	
 					}
+				).when('/post/new',
+					{
+						controller: 'newPostCtrl',
+						templateUrl: 'posts/new-post.html'
+					}
 				).when('/post/:id',
 					{
 						controller: 'viewPostCtrl',
 						templateUrl: 'posts/index.html'
 					}
-				);
+				).otherwise({redirectTo: '/'});
 		}
 	);
