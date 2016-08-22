@@ -15,7 +15,13 @@ var app = angular.module('portfolio', ["ngResource", "ngRoute", "templates"]);
 						controller: 'newPostCtrl',
 						templateUrl: 'posts/new-post.html'
 					}
-				).when('/post/:id',
+				).when('/post/:id/edit',
+					{
+						controller: 'editPostCtrl',
+						templateUrl: 'posts/edit-post.html'
+					}
+				)
+				.when('/post/:id',
 					{
 						controller: 'viewPostCtrl',
 						templateUrl: 'posts/index.html'

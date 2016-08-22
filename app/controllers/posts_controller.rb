@@ -28,6 +28,17 @@ class PostsController < ApplicationController
 		end
 	end
 
+	def edit
+		render json: Post.find(params[:id])
+	end
+
+	def update
+		@post = Post.find(params[:id])
+		if @post.update_attributes(post_params)
+			render json: :ok
+		end
+	end
+
 	private
 		def post_params
 			params.require(:post).permit(:title, :body)
