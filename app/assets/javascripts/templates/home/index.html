@@ -1,12 +1,11 @@
-<div class="col-md-10 col-md-offset-1">
-	<h1>Blog</h1>
-	<small>This is a simple blog</small>
-	<div ng-controller="postCtrl">
-		<div ng-repeat="post in posts">
-			<p>{{ post.title }}</p>
-			<p>{{ post.body }}</p>
-			<button class="btn btn-sm btn-primary" ng-click="viewPost(post)">Show</button>
-			<a ng-click="deletePost(post)" class="btn btn-sm btn-primary">Delete</a>
+<div ng-controller="postCtrl">
+	<div ng-repeat="post in posts" class="col-sm-6 col-sm-offset-3">
+		<div class="page-header" ng-click="viewPost(post)">
+			<h1>{{ post.title }}</h1>
+			<small>{{ post.created_at | date }}</small>
 		</div>
+		<p>{{ post.body }}</p>
+		<button class="btn btn-sm btn-primary" ng-click="viewPost(post)">Show</button>
+		<a ng-click="deletePost(post)" class="btn btn-sm btn-primary">Delete</a>
 	</div>
 </div>
