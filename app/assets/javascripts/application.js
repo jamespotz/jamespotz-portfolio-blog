@@ -19,5 +19,4 @@
 //= require_tree ./templates
 //= require app
 //= require bootstrap
-//= require turbolinks
 //= require_tree .
