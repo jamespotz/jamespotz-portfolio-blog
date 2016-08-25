@@ -3,7 +3,7 @@
 <head>
   <title>Portfolio</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
+  <script src="https://use.fontawesome.com/a721b01345.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body ng-app="portfolio" data-no->
@@ -24,7 +24,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Jamespotz</a>
+      <a class="navbar-brand" href="/">Jamespotz</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
@@ -40,5 +40,6 @@
 	<%= yield %>
 </div>
 
+<%= javascript_include_tag 'application' %>
 </body>
 </html>

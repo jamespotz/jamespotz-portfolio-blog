@@ -12,5 +12,21 @@
  *
  *= require_tree .
  *= require bootstrap
+ *= require textAngular
  *= require_self
  */
+
+.ta-toolbar {
+    background-color: #F0F0F0;
+    padding: 10px 10px 5px;
+    margin-left: 0px;
+    border: 1px solid #EEE;
+}
+.ta-editor {
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #EEE;
+}
+button {
+	text-shadow: none!important;
+}

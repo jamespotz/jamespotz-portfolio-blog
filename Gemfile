@@ -50,6 +50,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-angular-resource'
   gem 'rails-assets-bootstrap'
   gem 'rails-assets-angular-route'
+  gem 'rails-assets-textAngular'
+  gem 'rails-assets-rangy'
 end
 gem 'angular-rails-templates'
 gem 'activeadmin', github: 'activeadmin'

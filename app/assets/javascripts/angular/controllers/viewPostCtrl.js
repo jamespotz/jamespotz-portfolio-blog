@@ -9,8 +9,12 @@ app.controller('viewPostCtrl',[
 
 		$scope.deletePost = function(post) {
 			post.$delete(function(){
-				$location.path('/');
+				$location.path('/post');
 			});
+		}
+
+		$scope.editPost = function(post){
+			$location.path("/post/" + post.id + "/edit");
 		}
 	}
 ]);

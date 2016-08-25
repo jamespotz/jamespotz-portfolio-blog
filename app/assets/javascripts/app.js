@@ -1,4 +1,4 @@
-var app = angular.module('portfolio', ["ngResource", "ngRoute", "templates"]);
+var app = angular.module('portfolio', ["ngResource", "ngRoute", "templates", "textAngular"]);
 
 
 //routes
@@ -16,18 +16,18 @@ var app = angular.module('portfolio', ["ngResource", "ngRoute", "templates"]);
 					).when('/post/new',
 						{
 							controller: 'newPostCtrl',
-							templateUrl: 'posts/new-post.html'
+							templateUrl: 'posts/new.html'
 						}
 					).when('/post/:id/edit',
 						{
 							controller: 'editPostCtrl',
-							templateUrl: 'posts/edit-post.html'
+							templateUrl: 'posts/edit.html'
 						}
 					)
 					.when('/post/:id',
 						{
 							controller: 'viewPostCtrl',
-							templateUrl: 'posts/index.html'
+							templateUrl: 'posts/show.html'
 						}
 					).otherwise({redirectTo: '/'});
 
