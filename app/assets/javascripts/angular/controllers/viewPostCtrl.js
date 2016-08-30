@@ -11,10 +11,10 @@ app.controller('viewPostCtrl',[
 			post.$delete(function(){
 				$location.path('/post');
 			});
-		}
+		};
 
 		$scope.editPost = function(post){
 			$location.path("/post/" + post.id + "/edit");
-		}
+		};
 	}
 ]);

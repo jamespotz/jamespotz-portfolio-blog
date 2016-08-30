@@ -27,7 +27,7 @@ var app = angular.module('portfolio', ["ngResource", "ngRoute", "templates", "te
 					.when('/post/:id',
 						{
 							controller: 'viewPostCtrl',
-							templateUrl: 'posts/show.html'
+							templateUrl: 'posts/show.html.erb'
 						}
 					).otherwise({redirectTo: '/'});
 
