@@ -33,3 +33,14 @@ button {
 a {
 	text-decoration: none!important;
 }
+.post-header{
+	font-size: 45px;
+	cursor: pointer;
+}
+.post-header:hover:after{
+	content: "\e144";
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-size: 13px;
+    padding-left: 5px;
+}

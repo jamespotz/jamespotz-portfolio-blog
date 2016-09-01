@@ -31,6 +31,8 @@
         <li ng-class="navClass('home')"><a href="/">Home <span class="sr-only">(current)</span></a></li>
         <li ng-class="navClass('about')"><a href="/about">About</a></li>
         <li ng-class="navClass('post')"><a href="/post">Blog</a></li>
+        <li ng-show="signedIn()"><a href="/">{{ user.username }}</a></li>
+        <li ng-show="signedIn()"><a ng-click="logout()">Log Out</a></li>
       </ul>
     </div>
   </div>

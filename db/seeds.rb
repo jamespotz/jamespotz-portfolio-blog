@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-#AdminUser.create!(email: 'thepoltergeist23@gmail.com', password: 'james143lala', password_confirmation: 'james143lala')
+AdminUser.create!(email: 'thepoltergeist23@gmail.com', password: 'james143lala', password_confirmation: 'james143lala')
 (0..10).each do |i|
 	Post.create!(
 		title: "First Post",

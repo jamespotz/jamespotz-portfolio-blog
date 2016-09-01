@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-	respond_to :html, :json
+	before_filter :authenticate_user!, only: [:create, :destroy, :update]
+
 	def index
 		@post = Post.all
 		render :json => @post

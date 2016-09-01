@@ -52,7 +52,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-angular-route'
   gem 'rails-assets-textAngular'
   gem 'rails-assets-rangy'
+  gem 'rails-assets-angular-devise'
 end
 gem 'angular-rails-templates'
-gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem 'activeadmin', github: 'activeadmin'
