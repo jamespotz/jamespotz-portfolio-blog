@@ -8,10 +8,15 @@ app.config([
 		'$locationProvider',
 		function($routeProvider, $locationProvider){
 			$routeProvider
-				.when('/post',
+				.when('/',
+					{
+						controller: 'homeCtrl',
+						templateUrl: 'home/index.html'	
+					}
+				).when('/post',
 					{
 						controller: 'postCtrl',
-						templateUrl: 'home/index.html'
+						templateUrl: 'home/post.html'
 					}
 				).when('/post/new',
 					{
