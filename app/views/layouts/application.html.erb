@@ -16,7 +16,7 @@
 </div>
 
 <nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid" ng-controller='navCtrl'>
+  <div class="container" ng-controller='navCtrl'>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -28,7 +28,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li ng-class="navClass('home')"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+        <li ng-class="navClass('abc')"><a href="/abc">Home <span class="sr-only">(current)</span></a></li>
         <li ng-class="navClass('about')"><a href="/about">About</a></li>
         <li ng-class="navClass('post')"><a href="/post">Blog</a></li>
         <li ng-show="signedIn()"><a href="/">{{ user.username }}</a></li>
@@ -39,7 +39,9 @@
 </nav>
 
 <div class="container-fluid">
-	<%= yield %>
+  <div class="row">
+    <%= yield %>
+  </div>
 </div>
 
 <%= javascript_include_tag 'application' %>

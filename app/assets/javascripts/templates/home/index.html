@@ -1,31 +1,36 @@
-<div class="flex-container">
-	<div class="felx-item avatar">
-		[insert picture here]
+<div class="flex-container" ng-controller="homeCtrl">
+	<div class="felx-item">
+		<img src="/assets/james.jpg" class="avatar" width="135px" height="135px">
 	</div>
 	<div class="flex-item">
 		<h1>
 			Hi! I'am James. <br>
 			<small>
-				I'am a software developer
-				<a href="www.paramountdirect.com" class="work-link links">@paramountdirect</a>
+				<span class="code-wrapper"><%=</span>
+				"I'am a software developer
+				#{<a href="https://paramountdirect.com" class="work-link links">@paramountdirect</a>}
+				<span class="code-wrapper">%></span>
 			</small>
 		</h1>
 	</div>
 	<div class="flex-item">
-		<div class="flex-social links">
+		<div class="flex-social">
 			<a href="">
-				#[facebook]
+				<i class="fa fa-facebook-square"></i>
 			</a>
 		</div>
-		<div class="flex-social links">
+		<div class="flex-social">
 			<a href="">
-				#[twitter]
+				<i class="fa fa-twitter-square"></i>
 			</a>
 		</div>
-		<div class="flex-social links">
+		<div class="flex-social">
 			<a href="">
-				#[linkden]
+				<i class="fa fa-linkedin-square"></i>
 			</a>
 		</div>
+	</div>
+	<div class="flex-item">
+		<small class="text-muted">made with Ruby on Rails &amp; AngularJS</small>
 	</div>
 </div>
