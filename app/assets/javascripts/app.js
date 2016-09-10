@@ -8,10 +8,15 @@ app.config([
 		'$locationProvider',
 		function($routeProvider, $locationProvider){
 			$routeProvider
-				.when('/abc',
+				.when('/home',
 					{
 						controller: 'homeCtrl',
 						templateUrl: 'home/index.html'	
+					}
+				).when('/about',
+					{
+						controller: 'aboutCtrl',
+						templateUrl: 'about/index.html'
 					}
 				).when('/post',
 					{
@@ -53,7 +58,7 @@ app.config([
 							})
 						}]
 					}
-				).otherwise({redirectTo: '/abc'});
+				).otherwise({redirectTo: '/home'});
 
 			$locationProvider.html5Mode({
 				enabled: true,
