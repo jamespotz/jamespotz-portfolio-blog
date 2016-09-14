@@ -56,4 +56,3 @@ source 'https://rails-assets.org' do
 end
 gem 'angular-rails-templates'
 gem 'devise'
-gem 'activeadmin', github: 'activeadmin'
