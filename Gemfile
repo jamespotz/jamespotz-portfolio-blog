@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.1'
+
 gem 'puma'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -56,3 +58,5 @@ source 'https://rails-assets.org' do
 end
 gem 'angular-rails-templates'
 gem 'devise'
+
+gem 'rails_12factor', group: :production
