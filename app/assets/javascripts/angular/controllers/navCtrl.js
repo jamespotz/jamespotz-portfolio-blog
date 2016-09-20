@@ -26,5 +26,9 @@ app.controller('navCtrl',[
 		$scope.$on('devise:logout', function(e, user){
 			$scope.user = {};
 		});
+
+		$scope.$on('devise:new-session', function(e, user) {
+					 // user logged in by Auth.login({...})
+		});
 	}
 ]);

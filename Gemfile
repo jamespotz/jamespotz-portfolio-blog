@@ -58,5 +58,5 @@ source 'https://rails-assets.org' do
 end
 gem 'angular-rails-templates'
 gem 'devise'
-
 gem 'rails_12factor', group: :production
+gem 'angular_rails_csrf'
