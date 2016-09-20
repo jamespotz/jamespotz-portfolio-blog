@@ -23,13 +23,13 @@
 
  h1, h2, h3, h4, h5, h6{
   font-family: 'Roboto', Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.618;
   letter-spacing: -.028em
  }
 
  p{
    font-family: 'Lora', Georgia, serif;
-   line-height: 1.58;
+   line-height: 1.618;
    font-size: 21px;
    letter-spacing: -.003em;
  }
