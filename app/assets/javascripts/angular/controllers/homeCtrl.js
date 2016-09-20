@@ -1,7 +1,8 @@
 app.controller('homeCtrl',[
 	'$scope',
 	'$location',
-	function($scope, $location){
-		
+  'Auth',
+	function($scope, $location, Auth){
+		$scope.signedIn = Auth.isAuthenticated;
 	}
 ]);
