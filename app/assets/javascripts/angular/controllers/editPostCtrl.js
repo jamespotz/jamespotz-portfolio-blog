@@ -6,7 +6,7 @@ app.controller('editPostCtrl',[
 	function($scope, $location, $routeParams, Post){
 		$scope.updatePost = function(){
 			$scope.post.$update(function(){
-				$location.path('/');
+				$location.path('/post/' + $routeParams.id);
 			});
 		};
 
