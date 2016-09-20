@@ -7,7 +7,7 @@ app.controller('newPostCtrl', [
 
 		$scope.addPost = function(){
 			$scope.post.$save(function(){
-				$location.path('/');
+				$location.path('/blog');
 			});
 		}
 	}
