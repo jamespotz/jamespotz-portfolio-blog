@@ -23,6 +23,11 @@ app.config([
 						controller: 'postCtrl',
 						templateUrl: 'home/post.html'
 					}
+				).when('/post/not-published',
+					{
+						controller: 'notPublishedCtrl',
+						templateUrl: 'posts/not_published.html'
+					}
 				).when('/post/new',
 					{
 						controller: 'newPostCtrl',

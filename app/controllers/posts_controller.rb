@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
-	before_filter :authenticate_user!, only: [:create, :destroy, :update]
+	before_filter :authenticate_user!, only: [:create, :destroy, :update, :not_published]
 
 	def index
-		@post = Post.all
+		@post = Post.all.where(published: true)
 		render :json => @post
 	end
 
@@ -40,8 +40,13 @@ class PostsController < ApplicationController
 		end
 	end
 
+	def not_published
+		@post = Post.all.where(published: [false, nil])
+		render json: @post
+	end
+
 	private
 		def post_params
-			params.require(:post).permit(:title, :body)
+			params.require(:post).permit(:title, :body, :published)
 		end
 end
