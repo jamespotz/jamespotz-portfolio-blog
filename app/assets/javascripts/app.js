@@ -11,7 +11,7 @@ app.config([
 				.when('/home',
 					{
 						controller: 'homeCtrl',
-						templateUrl: 'home/index.html'	
+						templateUrl: 'home/index.html'
 					}
 				).when('/about',
 					{

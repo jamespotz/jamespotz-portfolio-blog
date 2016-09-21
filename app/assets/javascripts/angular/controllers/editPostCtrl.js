@@ -3,7 +3,9 @@ app.controller('editPostCtrl',[
 	'$location',
 	'$routeParams',
 	'Post',
-	function($scope, $location, $routeParams, Post){
+	'Auth',
+	function($scope, $location, $routeParams, Post, Auth){
+		if (!Auth.isAuthenticated()){ $location.path('/home');}
 		$scope.updatePost = function(){
 			$scope.post.$update(function(){
 				$location.path('/post/' + $routeParams.id);
