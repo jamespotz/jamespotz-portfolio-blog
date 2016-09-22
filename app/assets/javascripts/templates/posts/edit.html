@@ -1,22 +1,5 @@
 <div class="col-sm-10 col-sm-offset-1">
 	<form role="form" ng-submit="updatePost()">
-		<div class="form-group">
-			<label for="title" class="control-label">Title</label>
-				<input type="text" id="title" class="form-control" ng-model="post.title">
-		</div>
-		<div class="form-group">
-			<label for="title" class="control-label">Content</label>
-			<div text-angular ng-model="post.body" ta-text-editor-class="border-around" ta-html-editor-class="border-around"></div>
-		</div>
-		<div class="form-group">
-			<label class="control-label">
-				<input type="checkbox" ng-model="post.published"> Publish
-			</label>
-		</div>
-		<div class="form-group">
-		    <button type="submit" class="btn btn-sm btn-primary">
-		    	Update Post
-		    </button>
-		</div>
+		<post-form post="post"></post-form>
 	</form>
 </div>

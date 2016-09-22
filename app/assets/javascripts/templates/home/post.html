@@ -1,11 +1,5 @@
 <div ng-controller="postCtrl">
 	<div ng-repeat="post in posts" class="col-sm-6 col-sm-offset-3">
-		<div class="page-header" ng-click="viewPost(post)">
-			<h1 class="post-title">{{ post.title }} </h1>
-			<small class="text-muted">{{ post.published_at | date }}</small>
-		</div>
-		<p ng-bind-html=" post.body | limitTo: 250 	"> ...</p>
-		<button ng-show="signedIn()" class="btn btn-sm btn-primary" ng-click="viewPost(post)">Show</button>
-		<button ng-show="signedIn()" ng-click="deletePost(post)" class="btn btn-sm btn-danger">Delete</button>
+		<display-post post="post"></display-post>
 	</div>
 </div>
