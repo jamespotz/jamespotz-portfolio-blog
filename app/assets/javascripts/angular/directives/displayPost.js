@@ -9,7 +9,7 @@ app.directive('displayPost', [
     scope: {
       post: '='
     },
-    controller: function($scope, $location){
+    controller: ['$scope', '$location', function($scope, $location){
       $scope.signedIn = Auth.isAuthenticated;
 
       $scope.deletePost = function(post) {
@@ -21,7 +21,7 @@ app.directive('displayPost', [
       $scope.viewPost = function(post) {
         $location.path("/post/" + post.id);
       }
-    }
+    }]
   }
 }]);
 
