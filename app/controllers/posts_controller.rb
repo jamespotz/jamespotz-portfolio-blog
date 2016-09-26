@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 	before_filter :authenticate_user!, only: [:create, :destroy, :update, :not_published]
 
 	def index
-		@post = Post.all.where(published: true)
+		@post = Post.all.where(published: true).order('published_at DESC')
 		render :json => @post
 	end
 
@@ -41,7 +41,7 @@ class PostsController < ApplicationController
 	end
 
 	def not_published
-		@post = Post.all.where(published: [false, nil])
+		@post = Post.all.where(published: [false, nil]).order("created_at DESC")
 		render json: @post
 	end
 
