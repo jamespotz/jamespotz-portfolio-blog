@@ -91,13 +91,19 @@ button {
 a {
 	text-decoration: none!important;
 }
+.blog-content{
+  padding-bottom: 200px;
+}
 .post-header{
 	font-size: 72px;
   line-height: 1;
 	cursor: pointer;
+  font-weight: 700;
 }
 .post-head-area{
-  padding: 40px 0;
+  padding: 70px 0;
+  display: table;
+  width: 100%;
 }
 .post-title{
   font-size: 3em;
