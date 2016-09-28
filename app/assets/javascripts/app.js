@@ -15,7 +15,6 @@ app.config([
 					}
 				).when('/about',
 					{
-						controller: 'aboutCtrl',
 						templateUrl: 'about/index.html'
 					}
 				).when('/post',

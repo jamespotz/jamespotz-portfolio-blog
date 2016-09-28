@@ -33,8 +33,6 @@
 
  p{
    font-family: 'Libre Baskerville', Georgia, serif;
-   line-height: 30px;
-   font-size: 21px;
  }
 
  .navbar-inverse .navbar-toggle:hover,
@@ -95,13 +93,10 @@ a {
   padding-bottom: 200px;
 }
 .post-header{
-	font-size: 72px;
-  line-height: 1;
 	cursor: pointer;
   font-weight: 700;
 }
 .post-head-area{
-  padding: 70px 0;
   display: table;
   width: 100%;
 }
@@ -161,10 +156,10 @@ a {
 }
 .links:hover:after{
 	content: "\e144";
-    font-family: 'Glyphicons Halflings';
-    -webkit-font-smoothing: antialiased;
-    font-size: 8px;
-    padding-left: 4px;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-size: 8px;
+  padding-left: 4px;
 }
 .code-wrapper{
 	color: orange;
@@ -174,10 +169,33 @@ a {
   .navbar-inverse .navbar-nav > li > a{
     text-align: center;
   }
+  p{
+    font-size: 14px;
+    line-height: 1.518;
+    text-rendering:  optimizeLegibility;
+    letter-spacing: -.004em;
+  }
+  h1.post-header{
+    font-size: 42px;
+    line-height: 1.618;
+    letter-spacing: -.006em;
+  }
+  .post-head-area{
+    padding: 10px 0;
+  }
 }
 
 @media screen and (min-width: 760px)  {
   .navbar-inverse .navbar-nav > li > a{
     text-align: left;
+  }
+  p{
+     font-size: 21px;
+  }
+  h1.post-header{
+    font-size: 72px;
+  }
+  .post-head-area{
+    padding: 70px 0;
   }
 }
